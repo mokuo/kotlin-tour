@@ -1,4 +1,4 @@
-package beginner.`control-flow`
+package beginner.control_flow.conditional_expressions
 
 import kotlin.random.Random
 
