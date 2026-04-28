@@ -1,4 +1,4 @@
-package Collections
+package beginner.collections
 
 fun main() {
     val greenNumbers = listOf(1, 4, 23)

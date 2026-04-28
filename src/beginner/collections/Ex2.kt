@@ -1,4 +1,4 @@
-package Collections
+package beginner.collections
 
 fun main() {
     val SUPPORTED = setOf("HTTP", "HTTPS", "FTP")
