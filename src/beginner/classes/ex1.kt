@@ -1,10 +1,10 @@
 package beginner.classes
 
 // Write your code here
-data class Employee(val name: String, var salary: Int)
+data class OldEmployee(val name: String, var salary: Int)
 
 fun main() {
-    val emp = Employee("Mary", 20)
+    val emp = OldEmployee("Mary", 20)
     println(emp)
     emp.salary += 10
     println(emp)
