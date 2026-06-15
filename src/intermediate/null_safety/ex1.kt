@@ -1,9 +1,9 @@
 package intermediate.null_safety
 
-data class User(val name: String?)
+data class User1(val name: String?)
 
 fun getNotificationPreferences(user: Any, emailEnabled: Boolean, smsEnabled: Boolean): List<String> {
-    val validUser = user as? User ?: return emptyList() // Write your code here
+    val validUser = user as? User1 ?: return emptyList() // Write your code here
     val userName = validUser.name ?: "Guest" // Write your code here
 
     return listOfNotNull(
@@ -14,8 +14,8 @@ fun getNotificationPreferences(user: Any, emailEnabled: Boolean, smsEnabled: Boo
 }
 
 fun main() {
-    val user1 = User("Alice")
-    val user2 = User(null)
+    val user1 = User1("Alice")
+    val user2 = User1(null)
     val invalidUser = "NotAUser"
 
     println(getNotificationPreferences(user1, emailEnabled = true, smsEnabled = false))
